@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:background="#00b7ee">
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#00b7ee">
+
+        <ImageButton
+            android:id="@+id/button_menu"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/repairlist_slidemenu"
+            android:layout_height="25dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="维修单"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_weight="11"/>
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/search"
+            android:layout_height="25dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_my"
+            android:background="@drawable/my_chosen"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_all"
+            android:background="@drawable/all_unchosen"
+            android:text="所有"
+            android:textColor="#00b7ee"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
